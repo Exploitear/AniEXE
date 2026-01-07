@@ -136,3 +136,12 @@ Create a category like Anime (or genres like Romance, Mystery, etc.) to keep ani
 - A library manager
 
 **Enjoy your Anime library**!
+
+## Attribution
+
+The AniEXE application icon artwork was created by **@TEIGI_3**.
+
+I do not claim ownership of this artwork.
+All rights belong to the original artist.
+If the artist would like this icon removed or replaced, please open an issue.
+
