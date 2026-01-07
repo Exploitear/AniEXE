@@ -83,7 +83,11 @@ winget install mpv.net
 
 *You can use **any** game launcher of your choice, though i recommend Heroic Games Launcher.*
 
-`winget install HeroicGamesLauncher.HeroicGamesLauncher`
+```powershell
+
+winget install HeroicGamesLauncher.HeroicGamesLauncher
+
+```
 
 *You can install it the exact same way as mpv.net*
 
