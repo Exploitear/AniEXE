@@ -42,6 +42,7 @@ mpv / mpv.net:
 Each **season** is one launcher entry.
 
 Anime/
+
 └─ Anime_Name/
 
 └─ Season 1/
