@@ -1,113 +1,135 @@
 # AniEXE
 
-**Offline Local-Anime-Launcher setup for *your* chosen Launcher.**
+**Offline local anime launcher for your existing game launcher.**
 
-**AniEXE** is a windows executable (compiled from C++ for robustness), that turns your Anime folder  something a **game launcher** (Steam, Heroic, Playnite, etc.) can launch and track — without servers, libraries, scraping! **Right alongside your games and Visual Novels**
+AniEXE is a small Windows executable (compiled from C++) that turns an anime folder into something a **game launcher** (Steam, Heroic, Playnite, etc.) can launch and track — **right alongside your games and visual novels**.
 
-It scans the folder it lives in, sorts episodes naturally, and launches them in order using **mpv.net**. That’s it!
+No servers.  
+No database.  
+No scraping.  
 
-if you've wanted a library for your Anime with No database, No daemon. This is it.
+Just folders and playback.
 
-## How it works
+---
+
+## What it does
 
 When you run **AniEXE.exe**:
 
-1. Finds all video files in the same folder  
-2. Filters out samples / trailers / extras  
-3. Sorts episodes using *natural* sorting (01, 02, 10 — not 1, 10, 2)
-4. Generates a temporary playlist
-5. Launches it with mpv / mpv.net
-6. Cleans it up and exits!
+1. Scans the folder it lives in
+2. Finds supported video files
+3. Filters out samples / trailers / extras
+4. Sorts episodes using *natural sorting* (01, 02, 10 — not 1, 10, 2)
+5. Generates a temporary playlist
+6. Launches it with **mpv / mpv.net**
+7. Cleans up and exits
 
 Your launcher:
 - Tracks playtime
 - Shows artwork
-- Remembers “last played”
-- etc.
+- Remembers last played
 
-mpv,net:
+mpv / mpv.net:
 - Handles resume
-- Handles playback, exactly from where you left off.
-- Anime-made sub-styling (ASS rendering, subtitle timing)
-- OP/ED markers so you know when the songs play and you can skip them in one click!
+- Starts exactly where you left off
+- Proper subtitle rendering (ASS, timing, styling)
+- Chapter / OP / ED markers for quick skipping
 
-## Folder layout (recommended)
+---
+
+## Recommended folder layout
+
+Each **season** is one launcher entry.
 
 Anime/
+└─ Anime_Name/
 
-└─ Anime_name/
-
-├─ Season number (1, 2 if applicable)
+└─ Season 1/
 
 ├─ AniEXE.exe
 
-├─ cover.png (for your launcher, if your launcher accepts banners as well, you can include them here!)
+├─ cover.png (for your launcher)
 
 ├─ EP01.mkv
 
 ├─ EP02.mkv
 
 └─ EP03.mkv
-           and so on.
 
-# Each Anime Season = one folder = one launcher entry.
 
-If your anime has multiple seasons, sort of them out by season number. if your anime has only one season, one folder is sufficient.
-this is so that **your launcher** can track how much of the *season* you watched, and you can **input different entries per season! since every season has a different cover artwork!**
+Why per season?
+- Launchers track playtime per entry
+- Seasons usually have different cover art
+- Cleaner progress tracking
 
-# Requirements:
+If an anime has only one season, one folder is enough.
 
-**1. mpv.net**
+---
 
-**2. Game launcher**
+## Requirements
 
-AniEXE requires mpv.net to handle playback, resume, and ordered episodes.
+### 1. mpv.net (required)
 
- Install via **winget**:
+AniEXE uses **mpv.net** for playback, resume, and ordered episodes.
+
+Install via **winget**:
 
 ```powershell
 
 winget install mpv.net
 
 ```
+How to install with **winget**:
 
-**How to install with winget**:
+**1.** Press **Win + X**
 
-**1.** Press Win + X
-
-**2.** Select Terminal, and click.
+**2.** Select **Terminal**
 
 **3.** Paste the command above and press Enter
 
-**4.** Wait until its install and close terminal.
+**4.** Wait for installation to finish
 
-*You can use **any** game launcher of your choice, though i recommend Heroic Games Launcher.*
+# Game launcher (recommended)
 
-```powershell
+AniEXE works standalone, but it is designed to be used with a launcher.
+
+You can use **any** launcher that supports custom executables.
+
+**Recommended: Heroic Games Launcher**
+```powershell 
 
 winget install HeroicGamesLauncher.HeroicGamesLauncher
 
 ```
+Heroic is recommended because it:
 
-*You can install it the exact same way as mpv.net*
+- Supports custom executables
 
+- Tracks playtime and last played
 
-*Heroic is recommended because:*
+- Allows full UI theming and CSS customization
 
-*It supports custom executables*
-*Tracks playtime and last played*
-*Allows full UI theming (you can make your anime library look however you want! I even have a cool theme for it.)*
+# Setup
 
-**Once you have mpv.net and a Game launcher:**
+**1.** Place **AniEXE.exe** inside the anime season folder
 
-**Place AniEXE.exe in your Anime folder (per season), Folder layout is stated above!**
+**2.** Open your game launcher
 
-In *your game launcher*:
+**3.** Click **Add Game** (or equivalent)
 
-1. Click "ADD GAME" (or your launcher equivalent)
-2. Enter Title, app image, .exe location (AniEXE.exe in your folder!) 
+**4.** Set the executable to `AniEXE.exe`
 
-**Make sure to set a category for your Anime entries (like "Anime" category, or Genre category - "mystery", "romance" etc), so you can diffentiate your Anime Library with your Game/Visual Novel library.**
+**5.** Add cover art if your launcher supports it
 
- **Enjoy your Anime library! :D**
+**Tip:**
+Create a category like Anime (or genres like Romance, Mystery, etc.) to keep anime entries separate from games.
 
+*What this is not*
+
+- A media server
+
+- A scraper
+
+- A library manager
+
+**Enjoy your Anime library**!
