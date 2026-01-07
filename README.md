@@ -58,6 +58,7 @@ this is so that **your launcher** can track how much of the *season* you watched
 # Requirements:
 
 **1. mpv.net**
+
 **2. Game launcher**
 
 AniEXE requires mpv.net to handle playback, resume, and ordered episodes.
@@ -89,7 +90,7 @@ AniEXE requires mpv.net to handle playback, resume, and ordered episodes.
 *Tracks playtime and last played*
 *Allows full UI theming (you can make your anime library look however you want! I even have a cool theme for it.)*
 
-# Once you have mpv.net and a Game launcher:
+**Once you have mpv.net and a Game launcher:**
 
 **Place AniEXE.exe in your Anime folder (per season), Folder layout is stated above!**
 
@@ -100,5 +101,5 @@ In *your game launcher*:
 
 **Make sure to set a category for your Anime entries (like "Anime" category, or Genre category - "mystery", "romance" etc), so you can diffentiate your Anime Library with your Game/Visual Novel library.**
 
-# Enjoy your Anime library! :D
+ **Enjoy your Anime library! :D**
 
