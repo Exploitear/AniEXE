@@ -2,7 +2,7 @@
 
 **Offline local anime launcher for your existing game launcher.**
 
-AniEXE is a small Windows executable (compiled from C++) that turns an anime folder into something a **game launcher** (Steam, Heroic, Playnite, etc.) can launch and track — **right alongside your games and visual novels**.
+AniEXE is a small Windows executable (compiled from C++) that turns an anime folder into something a **game launcher** (Steam, Heroic, Playnite, etc.) can launch and track - **right alongside your games and visual novels**.
 
 No servers.  
 No database.  
@@ -19,7 +19,7 @@ When you run **AniEXE.exe**:
 1. Scans the folder it lives in
 2. Finds supported video files
 3. Filters out samples / trailers / extras
-4. Sorts episodes using *natural sorting* (01, 02, 10 — not 1, 10, 2)
+4. Sorts episodes using *natural sorting* (01, 02, 10 - not 1, 10, 2)
 5. Generates a temporary playlist
 6. Launches it with **mpv / mpv.net**
 7. Cleans up and exits
