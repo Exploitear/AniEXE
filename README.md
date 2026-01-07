@@ -34,12 +34,19 @@ mpv,net:
 ## Folder layout (recommended)
 
 Anime/
+
 └─ Anime_name/
+
 ├─ Season number (1, 2 if applicable)
+
 ├─ AniEXE.exe
+
 ├─ cover.png (for your launcher, if your launcher accepts banners as well, you can include them here!)
+
 ├─ EP01.mkv
+
 ├─ EP02.mkv
+
 └─ EP03.mkv
            and so on.
 
