@@ -1,6 +1,6 @@
 # AniEXE
 
-# Offline Local-Anime-Launcher setup for *your* chosen Launcher.
+**Offline Local-Anime-Launcher setup for *your* chosen Launcher.**
 
 **AniEXE** is a windows executable (compiled from C++ for robustness), that turns your Anime folder  something a **game launcher** (Steam, Heroic, Playnite, etc.) can launch and track — without servers, libraries, scraping! **Right alongside your games and Visual Novels**
 
