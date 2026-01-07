@@ -124,6 +124,8 @@ Heroic is recommended because it:
 **Tip:**
 Create a category like Anime (or genres like Romance, Mystery, etc.) to keep anime entries separate from games.
 
+![Sample Anime Library in Heroic](Showcase/Heroic-library-sample.png)
+
 *What this is not*
 
 - A media server
