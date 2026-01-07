@@ -65,7 +65,11 @@ AniEXE requires mpv.net to handle playback, resume, and ordered episodes.
 
  Install via **winget**:
 
-`winget install mpv.net`
+```powershell
+
+winget install mpv.net
+
+```
 
 **How to install with winget**:
 
